@@ -1,0 +1,347 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MYKINGDOM.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MYKINGDOM</title>
+<style>
+        body{
+            background-color: #F7F6F3;
+            font-family: Verdana;
+            color: #7C6F57
+        }
+#content {
+    width: 750px;
+    min-height: 600px;
+    border: 1px solid black;
+    float: right;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    vertical-align:middle;
+    text-align: center;
+    background-color: white
+}
+#wrapper {
+    width: 1400px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    color: #247BA0;
+    text-align: center;
+    font-size: 20px;
+    background-color: burlywood
+}
+ 
+#nav {
+    background-color: antiquewhite;
+    padding: 5px;
+}
+ 
+ul {
+    list-style-type: none;
+}
+ 
+li a {
+    color: #F1FAEE;
+    font-size: 30px;
+    column-width: 5%;
+}
+ 
+li {
+    display: inline;
+    padding-left: 2px;
+    column-width: 20px;
+}
+ 
+a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+ 
+li a:hover {
+    background-color: #F3FFBD;
+    color: #FF1654;
+    padding: 1%;
+}
+ 
+#side {
+    font-size: medium;
+    width: 220px;
+    height: auto;
+    border: 1px solid #CDCDCD;
+    float: left;
+    background-color: antiquewhite;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+ 
+#article {
+    background-color: #EEF5DB;
+    padding: 10px;
+    padding-bottom: 75%;
+}
+ 
+#footer {
+    background-color: burlywood;
+    text-align: center;
+    padding-top:2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+ 
+#con {
+    border: double;
+    border-color: burlywood;
+}
+        .auto-style2 {
+            height: 37px;
+            text-align: right;
+        width: 1400px;
+    }
+        /*.auto-style8 {
+            text-align: center;
+            height: 2000px;
+        }*/
+        .auto-style9 {
+            text-align: left;
+        background-color: #FFFFFF;
+    }
+        .auto-style10 {
+            float: left;
+            left: 2px;
+            position: relative;
+            top: 0px;
+            width: 1400px;
+            height: 542px;
+        background-color: #CC0000;
+    }
+        .auto-style11 {
+            text-align: left;
+            color: #7C6F57;
+        }
+        .auto-style13 {
+            font-size: medium;
+        }
+        .auto-style14 {
+            text-align: center;
+        width: 640px;
+    }
+    .auto-style15 {
+        width: 1063px;
+        height: 2242px;
+        text-align: center;
+    }
+    .auto-style16 {
+        text-align: left;
+        color: #7C6F57;
+        background-color: #CC0000;
+    }
+    .auto-style17 {
+        width: 1400px;
+    }
+    .auto-style21 {
+        width: 100%;
+        height: 101px;
+    }
+    .auto-style24 {
+        font-size: small;
+    }
+    .auto-style23 {
+        font-size: x-large;
+    }
+    .auto-style26 {
+        width: 412px;
+    }
+    .auto-style27 {
+        width: 553px;
+        font-size: small;
+    }
+    .auto-style28 {
+        text-align: center;
+    }
+    .auto-style29 {
+        text-align: center;
+        width: 1400px;
+        height: 1186px;
+    }
+    .auto-style30 {
+        width: 21px;
+        text-align: right;
+    }
+    .auto-style31 {
+        text-align: left;
+    }
+    .auto-style32 {
+        width: 37px;
+    }
+    .auto-style33 {
+        text-align: right;
+    }
+</style>
+<link href="css/my.css" rel="stylesheet" />
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="wrapper" class="auto-style15">
+<header id="header" class="auto-style2" style="background-color: #003399;  color: #FFFFFF;">
+&nbsp;&nbsp;Hotline:&nbsp;19001208&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hệ thống gồm 246 cửa hàng trên toàn quốc</header>
+    <div class="auto-style17">
+        <br />
+        <table class="auto-style21">
+            <tr>
+                <td class="auto-style19">
+        <asp:Image ID="Image7" runat="server" Height="55px" ImageUrl="~/Images/MYKINGDOM.png" Width="277px" />
+&nbsp;</td>
+                <td class="auto-style19">
+                    &nbsp;
+                    <table class="auto-style19">
+                        <tr>
+                            <td class="auto-style30">
+                                <asp:TextBox ID="txttsp" runat="server" Height="35px" Width="256px"></asp:TextBox>
+                            </td>
+                            <td class="auto-style31">
+                                <asp:ImageButton ID="imbtk" runat="server" Height="63px" ImageUrl="~/Images/find.png" Width="68px" PostBackUrl="~/TimSP.aspx" />
+                            </td>
+                        </tr>
+                    </table>
+        </td>
+                <td class="auto-style19">
+                    <table class="auto-style19" style="width:100%;">
+                        <tr>
+                            <td class="auto-style31">
+        <asp:ImageButton ID="ImageButton4" runat="server" Height="70px" ImageUrl="~/Images/VAN.png" Width="80px" PostBackUrl="~/ChinhsachGH.aspx" />
+                    &nbsp;&nbsp; </td>
+                            <td class="auto-style32">&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="70px" ImageUrl="~/Images/crown.png" PostBackUrl="~/KHTT.aspx" Width="75px" />
+                    &nbsp; </td>
+                            <td class="auto-style33">&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="65px" ImageUrl="~/Images/cart.png" Width="80px" PostBackUrl="~/Customers/Giohang.aspx" />
+                            </td>
+                            <td class="auto-style31">
+                    <strong>
+                    <asp:Label ID="lbsl" runat="server" ForeColor="#CC0000" Height="60px" Width="144px" CssClass="auto-style23"></asp:Label>
+                    </strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <asp:Image ID="Image9" runat="server" Height="730px" ImageUrl="~/Images/blfr.png" Width="1400px" />
+    </div>
+<asp:Menu ID="Menu2" runat="server"
+                    Orientation="Horizontal" Font-Size="Small"
+                    Height="51px" BackColor="#CC0000"
+                    RenderingMode="Table" Width="1400px" ForeColor="White"
+                    style="padding-left:10px" BorderStyle="Dashed" Font-Bold="True" Font-Strikeout="False"  CssClass="auto-style16" BorderColor="#CCCCCC">
+<DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+<DynamicMenuItemStyle HorizontalPadding="2px" VerticalPadding="8px" BackColor="#CCCCCC" ForeColor="Black" />
+<DynamicMenuStyle BackColor="#F7F6F3" />
+<DynamicSelectedStyle BackColor="#5D7B9D" />
+<Items>
+<asp:MenuItem Text="Trang Chủ" Value="1" NavigateUrl="~/TrangChu.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Sản phẩm" Value="Sản phẩm">
+        <asp:MenuItem NavigateUrl="~/Admin/CTSanpham.aspx" Text="Chi tiết SP" Value="Chi tiết SP"></asp:MenuItem>
+        <asp:MenuItem NavigateUrl="~/Admin/ThemSP2.aspx" Text="Thêm SP" Value="Thêm SP"></asp:MenuItem>
+    </asp:MenuItem>
+<asp:MenuItem Text="Đơn hàng" Value="3" NavigateUrl="~/Customers/Donhang.aspx"></asp:MenuItem>
+<asp:MenuItem Text="Tài khoản" Value="6" NavigateUrl="~/Login.aspx">
+    <asp:MenuItem Text="Tạo tài khoản" Value="Tạo tài khoản" NavigateUrl="~/TaoTK.aspx"></asp:MenuItem>
+    <asp:MenuItem Text="Đăng nhập" Value="Đăng nhập" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+    </asp:MenuItem>
+</Items>
+<StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+<StaticMenuItemStyle HorizontalPadding="2px" VerticalPadding="8px" />
+<StaticSelectedStyle BackColor="#5D7B9D" />
+</asp:Menu>
+    <div class="auto-style29">
+<br />
+<div id="side"  class="auto-style14" style="background-color: #FFFFFF ; width: 250px" >
+<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#7C6F57" CssClass="auto-style11">ĐỒ CHƠI</asp:Label>
+<br />
+<strong>
+<asp:Menu ID="Menu1" runat="server" Height="414px" RenderingMode="Table" Width="26px" BackColor="White" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" ForeColor="#7C6F57" StaticSubMenuIndent="10px" CssClass="auto-style9" style="font-size: small">
+<DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+<DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+<DynamicMenuStyle BackColor="#FF9999" />
+<DynamicSelectedStyle BackColor="#CC0000" />
+<Items>
+<asp:MenuItem Text="Phương tiện" Value="DC01"></asp:MenuItem>
+<asp:MenuItem Text="Lắp ghép" Value="DC02"></asp:MenuItem>
+<asp:MenuItem Text="Học tập" Value="DC03"></asp:MenuItem>
+<asp:MenuItem Text="Sáng tạo" Value="DC04"></asp:MenuItem>
+<asp:MenuItem Text="Búp bê" Value="DC05"></asp:MenuItem>
+<asp:MenuItem Text="Robot" Value="DC06"></asp:MenuItem>
+    <asp:MenuItem Text="Động vật" Value="DC07"></asp:MenuItem>
+</Items>
+<StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+<StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+<StaticSelectedStyle BackColor="#996600" ForeColor="White" />
+</asp:Menu>
+</strong>
+<br style="background-color: #CCCCCC" />
+</div>
+<div id="content" style="width: 1130px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">       
+    <p>
+        <br />
+    </p>
+    <p>
+    </p>
+</asp:ContentPlaceHolder>
+</div>
+<div id ="footer" class="auto-style10" style="background-color: #FFFFFF; ">
+    <div class="auto-style28">
+&nbsp;<table style="width:100%;">
+            <tr>
+                <td class="auto-style27"><strong><span class="auto-style24">HOTLINE CHĂM SÓC KHÁCH HÀNG</span></strong><br />
+                    <span class="auto-style23" style="color :#CC0000">19001208</span></td>
+                <td class="auto-style26">
+                    <asp:Image ID="Image14" runat="server" Height="78px" ImageUrl="~/Images/bct.png" Width="210px" />
+                </td>
+                <td class="auto-style27"><strong><span class="auto-style13">Theo dõi MKD</span></strong><br class="auto-style13" />
+&nbsp;<br />
+                    <asp:Image ID="Image11" runat="server" Height="50px" ImageUrl="~/Images/face.png" Width="50px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image12" runat="server" Height="50px" ImageUrl="~/Images/insta.jpg" Width="50px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image13" runat="server" Height="50px" ImageUrl="~/Images/tiktok.jpg" Width="50px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">Từ thứ Hai đến Thứ Bảy (8:00 -17:00)<br />
+                    Chủ nhật (8:00 - 12:00)</td>
+                <td class="auto-style26">
+        <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/MYKINGDOM.png" Width="369px" Height="73px" />
+                </td>
+                <td rowspan="2"><strong>246 CỬA HÀNG TOÀN QUỐC<br />
+                    </strong>
+                    <asp:Image ID="Image15" runat="server" Height="227px" ImageUrl="~/Images/CUAHANG.JPG" Width="368px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style27">
+                    <asp:Image ID="Image10" runat="server" Height="55px" ImageUrl="~/Images/email.png" Width="57px" />
+&nbsp;<span class="auto-style24">hotr@mykingdom.com.vn</span></td>
+                <td class="auto-style26">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <h2 class="auto-style13" style="color: #FFFFFF" >
+            <span class="auto-style24" style="box-sizing: border-box; padding: 0px; color: rgb(68, 68, 68); font-family: Montserrat, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Công ty cổ phần Việt Tinh AnhSố ĐKKD: 0309132354 do sở kế hoạch và đầu tư cấp ngày 14/07/09</span><br class="auto-style24" style="box-sizing: border-box; padding: 0px; color: rgb(68, 68, 68); font-family: Montserrat, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;" />
+            <span class="auto-style24" style="box-sizing: border-box; padding: 0px; color: rgb(68, 68, 68); font-family: Montserrat, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Địa chỉ: 33-35 đường số D4, khu Đô thị mới Him Lam, Phường Tân Hưng, Quận 7, TP. Hồ Chí MinhĐiện thoại: 0286.2638.600</span></h2>
+&nbsp;&nbsp;
+</div>
+  </div>
+</div>
+ 
+           </form>
+</body>
+</html>
